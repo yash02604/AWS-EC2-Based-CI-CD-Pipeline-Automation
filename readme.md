@@ -33,15 +33,18 @@ This project uses a multi-server architecture on AWS EC2. Four separate EC2 inst
 
 ### Architecture Diagram
 
+
+
 ```mermaid
 flowchart TD
-    A[GitHub Repository] --> B[Jenkins EC2 Server]
-    B --> C[Maven Build and Tests]
-    C --> D[SonarQube EC2 Server]
-    D --> E[Nexus Repository EC2 Server]
-    E --> F[Tomcat EC2 Server]
-    F --> G[Spring PetClinic Application]
+    A["GitHub Repository"] --> B["Jenkins EC2 Server"]
+    B --> C["Maven Build and Tests"]
+    B --> D["SonarQube EC2 Server"]
+    B --> E["Nexus Repository EC2 Server"]
+    B --> F["Tomcat EC2 Server"]
+    F --> G["Spring PetClinic Application"]
 ```
+
 
 ### Infrastructure Highlights
 
