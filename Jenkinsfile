@@ -5,7 +5,7 @@ pipeline {
         stage('git-clone') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/palurisravs1910/spring-framework-petclinic.git'
+                    url: 'https://github.com/yash02604/Spring-PetClinic-CICD-Pipeline.git'
             }
         }
 
